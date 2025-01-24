@@ -34,17 +34,6 @@ public:
                              NvMOTTrackedObjBatch *pTrackedObjectsBatch);
 
     /**
-     * @brief Output the past-frame data if there are
-     *
-     *  Internal implementation of NvMOT_ProcessPast()
-     *
-     * @param [in] pParam Pointer to parameters for the frame to be processed
-     * @param [out] pPastFrameObjectsBatch Pointer to past frame object tracks output
-     */
-    NvMOTStatus processFramePast(const NvMOTProcessParams *params,
-                                 NvDsPastFrameObjBatch *pPastFrameObjectsBatch);
-
-    /**
      * @brief Terminate trackers and release resources for a stream when the stream is removed
      *
      *  Internal implementation of NvMOT_RemoveStreams()
