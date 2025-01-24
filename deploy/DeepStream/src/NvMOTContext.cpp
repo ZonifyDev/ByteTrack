@@ -55,11 +55,6 @@ NvMOTStatus NvMOTContext::processFrame(const NvMOTProcessParams *params, NvMOTTr
     }
 }
 
-NvMOTStatus NvMOTContext::processFramePast(const NvMOTProcessParams *params,
-                                           NvDsPastFrameObjBatch *pPastFrameObjectsBatch) {
-    return NvMOTStatus_OK;
-}
-
 NvMOTStatus NvMOTContext::removeStream(const NvMOTStreamId streamIdMask) {
     if (byteTrackerMap.find(streamIdMask) != byteTrackerMap.end()){
         std::cout << "Removing tracker for stream: " << streamIdMask << std::endl;
